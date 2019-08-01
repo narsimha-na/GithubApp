@@ -1,8 +1,8 @@
-package com.example.githubapp.UI.model.gists;
+package com.example.githubapp.model.gists;
 
-import com.example.githubapp.UI.model.GitHubUser;
+import com.example.githubapp.model.GitHubUser;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class GistComment {
 
@@ -10,6 +10,7 @@ public class GistComment {
     private String body;
     private GitHubUser user;
     private Date created_at;
+    private Date updated_at;
 
     public int getId() {
         return id;
@@ -50,6 +51,4 @@ public class GistComment {
     public void setUpdated_at(Date updated_at) {
         this.updated_at = updated_at;
     }
-
-    private Date updated_at;
 }

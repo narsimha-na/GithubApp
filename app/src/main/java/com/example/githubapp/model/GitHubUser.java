@@ -1,6 +1,6 @@
-package com.example.githubapp.UI.model;
+package com.example.githubapp.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class GitHubUser {
 
@@ -9,16 +9,13 @@ public class GitHubUser {
     private String avatar_url;
     private String name;
     private String company;
-    private String blog;
-    private String location;
+    private String  blog;
+    private String  location;
     private String email;
     private String bio;
     private int public_gists;
-    private int follower;
+    private int followers;
     private int following;
-    private Date created_at;
-    private Date updated_at;
-    private int private_gists;
 
     public String getLogin() {
         return login;
@@ -100,12 +97,12 @@ public class GitHubUser {
         this.public_gists = public_gists;
     }
 
-    public int getFollower() {
-        return follower;
+    public int getFollowers() {
+        return followers;
     }
 
-    public void setFollower(int follower) {
-        this.follower = follower;
+    public void setFollowers(int followers) {
+        this.followers = followers;
     }
 
     public int getFollowing() {
@@ -140,6 +137,8 @@ public class GitHubUser {
         this.private_gists = private_gists;
     }
 
-
+    private Date created_at;
+    private Date updated_at;
+    private int private_gists;
 
 }

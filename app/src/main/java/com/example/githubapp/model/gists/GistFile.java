@@ -1,6 +1,8 @@
-package com.example.githubapp.UI.model.gists;
+package com.example.githubapp.model.gists;
 
-class GistFile{
+public class GistFile {
+
+    private String filename;
 
     public String getFilename() {
         return filename;
@@ -9,7 +11,4 @@ class GistFile{
     public void setFilename(String filename) {
         this.filename = filename;
     }
-
-    private String filename;
-
 }
